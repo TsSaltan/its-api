@@ -1,6 +1,6 @@
 {
     "name": "tssaltan/its-api",
-    "description": "PHP-script for API https://dev.tssaltan.top",
+    "description": "PHP-script for API dev.tssaltan.top",
     "type": "package",
     "authors": [
         {
@@ -14,8 +14,6 @@
     	"php":">=7.1"
     },
     "autoload": {
-        "psr-4": {
-            "itsAPI\\": "src/"
-        }
+        "classmap": ["src/itsAPI.php", "src/itsException.php"]
    }
 }
