@@ -11,8 +11,21 @@ class itsAPI {
 				   $apiVersion = 'v1';
 
 	public static function configure(string $baseURI, string $apiVersion){
-		self::$baseURI = $baseURI;
-		self::$apiVersion = $apiVersion;
+		if(filter_var($baseURI, FILTER_VALIDATE_URL) !== false){
+			self::$baseURI = $baseURI;
+		}
+
+		if(preg_match('#v[0-9\.]+#Ui', $apiVersion) !== false){
+			self::$apiVersion = $apiVersion;
+		}
+	}
+
+	public static function getBaseURI(): string {
+		return self::$baseURI;
+	}
+
+	public static function getApiVersion(): string {
+		return self::$apiVersion;
 	}
 
 	private $publicKey = null, 
