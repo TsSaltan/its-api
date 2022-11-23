@@ -1,0 +1,21 @@
+{
+    "name": "tssaltan/its-api",
+    "description": "PHP-script for API https://dev.tssaltan.top",
+    "type": "framework",
+    "authors": [
+        {
+            "name": "tssaltan",
+            "email": "tssaltan@gmail.com",
+            "homepage": "https://tssaltan.top"
+        }
+    ],
+    "version":"dev-1.0",
+    "require": {
+    	"php":">=7.1",
+    },
+    "autoload": {
+        "psr-4": {
+            "itsAPI\\": "src/"
+        }
+   }
+}
