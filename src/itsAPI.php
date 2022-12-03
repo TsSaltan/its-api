@@ -7,7 +7,7 @@
 namespace itsAPI;
 
 class itsAPI {
-	private static $baseURI = 'https://dev.tssaltan.top/api/',
+	private static $baseURI = 'http://dev.localhost/api/',
 				   $apiVersion = 'v1';
 
 	public static function configure(string $baseURI, string $apiVersion){
