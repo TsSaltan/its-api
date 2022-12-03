@@ -1,6 +1,6 @@
 var itsApi = {
 	apiKey: null,
-	baseURI: 'http://dev.localhost/api/',
+	baseURI: 'https://dev.tssaltan.top/api/',
 	apiVersion: 'v1',
 	returnType: 'json',
 	ajax: {
